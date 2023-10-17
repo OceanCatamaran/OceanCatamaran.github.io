@@ -1,0 +1,93 @@
+html{
+  background-color: white;
+}
+
+.container {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 0%;
+    top: 0%;
+    right: 0%;
+    float: none;
+    width: 100%;
+    height: 5em;
+    shape-outside: inset(20px 50px 10px 0 round 50px);
+    background-color: #A0E1FF;
+    border: 2px solid black;
+    border-radius: 0px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    border-right: none;
+    z-index: 1;
+}
+
+.titlecontainer {
+  display: grid;
+  height: 1fr;
+  width: 80%;
+  position: relative;
+  left: 0%;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+}
+
+.titlecontainer > .boxes{
+  background-color: #A0E1FF;
+  text-align: left;
+  padding: 1.65em 0em 0em 1.1em;
+  font-size: 1.1em;
+  height: auto;
+  width: auto;
+}
+
+.buttoncontainer{
+  display: grid;
+  height: 1fr;
+  width: 80%;
+  position: relative;
+  bottom: 0%;
+  right: 0em;
+  align-content: flex-end;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+  gap: 0px;
+  background-color: #A0E1FF;
+  border-bottom: none;
+}
+
+.button {
+  background-color: white;
+  border: solid;
+  border-color: black;
+  border-radius: 10px 10px 0px 0px;
+  padding: 0.8em;
+  text-align: center;
+  font-size: 1em;
+  cursor: pointer;
+  float: left;
+  width: auto;
+  border-bottom: none;
+}
+
+.selectedbutton {
+  background-color: aqua;
+  border: solid;
+  border-color: black;
+  border-radius: 10px 10px 0px 0px;
+  padding: 0.8em;
+  text-align: center;
+  font-size: 1em;
+  cursor: pointer;
+  float: left;
+  width: auto;
+  border-bottom: none;
+}
+
+.selectedbutton:not(:last-child) {
+  border-right: none;
+}
+
+.button:not(:last-child) {
+  border-right: none;
+}
