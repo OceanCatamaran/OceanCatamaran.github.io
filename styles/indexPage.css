@@ -1,13 +1,16 @@
 .profilepic{
+  display: block;
+  margin-left: 15%;
+  margin-right: auto;
   position: relative;
-  top: 1em;
+  top: 2.4em;
   left: 3em;
-  height: 13em;
-  width: 13em;
+  height: 25em;
+  width: 25em;
   shape-outside: inset(20px 50px 10px 0 round 50px);
   background-color: rgb(255, 255, 255);
-  border: 2px solid black;
-  border-radius: 10px;
+  border: 0.3em solid black;
+  border-radius: 5%;
   padding: 0em;
 }
 
@@ -16,6 +19,7 @@ img{
   width: 100%;
   height: 100%;
   object-fit: fill;
+  border-radius: 3.5%;
 }
 
 .body{
@@ -26,8 +30,8 @@ img{
   border: solid black;
   border-width: 5px 5px 5px 5px;
   height: 13em; /*orig - 145*/
-  width: 20em;
+  width: 18em;
   padding: 20px 25px 20px 25px;
   margin-left: 0em;
-  font-size: 1em;
+  font-size: 1.8em;
 }

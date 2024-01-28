@@ -9,16 +9,53 @@ img{
     height: 50%;
 }
 
-.body{
+embed{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+    height: 100%;
+}
+
+.contactBody{
     position: relative;
-    top: 10em;
-    left: 20em;
+    top: 5em;
+    display: block;
+    margin-left: 30%;
+    margin-right: auto;
     float: left;
     border: solid black;
     border-width: 5px 5px 5px 5px;
-    height: 10em; /*orig - 145*/
-    width: 20em;
+    height: 100%; /*orig - 145*/
+    width: 40%;
     padding: 20px 25px 20px 25px;
-    margin: auto;
+    font-size: 2em;
+}
+
+.resumeBody{
+    position: relative;
+    top: 10em;
+    left: 5%;
+    float: left;
+    border: solid black;
+    border-width: 5px 5px 5px 5px;
+    height: 50em; /*orig - 145*/
+    width: 80%;
+    padding: 20px 25px 20px 25px;
+    margin: 0em 0em 20em 0em;
     font-size: 1em;
-  }
+}
+
+.projectsBody{
+    position: relative;
+    top: 6.5em;
+    left: 5%;
+    float: left;
+    border: solid black;
+    border-width: 5px 5px 5px 5px;
+    height: 50em; /*orig - 145*/
+    width: 80%;
+    padding: 20px 25px 20px 25px;
+    margin: 0em 0em 20em 0em;
+    font-size: 1.5em;
+}

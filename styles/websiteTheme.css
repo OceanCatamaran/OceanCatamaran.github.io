@@ -11,14 +11,16 @@ html{
     right: 0%;
     float: none;
     width: 100%;
-    height: 5em;
+    height: 7em;
     shape-outside: inset(20px 50px 10px 0 round 50px);
     background-color: #A0E1FF;
-    border: 2px solid black;
+    border: 0.2em solid black;
     border-radius: 0px;
     margin: 0px 0px 0px 0px;
     padding: 0px;
     border-right: none;
+    border-left: none;
+    /*border-bottom: none;*/
     z-index: 1;
 }
 
@@ -30,6 +32,11 @@ html{
   left: 0%;
   grid-template-columns: auto;
   grid-template-rows: auto;
+  font-size: 2em;
+  /*border: 0.2em solid black;
+  border-top: none;
+  border-right: none;
+  border-left: none;*/
 }
 
 .titlecontainer > .boxes{
@@ -46,6 +53,7 @@ html{
   height: 1fr;
   width: 80%;
   position: relative;
+  top: 2.5%;
   bottom: 0%;
   right: 0em;
   align-content: flex-end;
@@ -54,34 +62,35 @@ html{
   gap: 0px;
   background-color: #A0E1FF;
   border-bottom: none;
+  z-index: 2;
 }
 
 .button {
-  background-color: white;
+  background-color: #DCDCDC;
   border: solid;
   border-color: black;
   border-radius: 10px 10px 0px 0px;
   padding: 0.8em;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.5em;
   cursor: pointer;
   float: left;
   width: auto;
-  border-bottom: none;
+  /*border-bottom: none;*/
 }
 
 .selectedbutton {
-  background-color: aqua;
+  background-color: white;
   border: solid;
   border-color: black;
+  border-bottom-color: white;
   border-radius: 10px 10px 0px 0px;
   padding: 0.8em;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.5em;
   cursor: pointer;
   float: left;
   width: auto;
-  border-bottom: none;
 }
 
 .selectedbutton:not(:last-child) {
