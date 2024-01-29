@@ -43,6 +43,7 @@ html{
   background-color: #A0E1FF;
   text-align: left;
   padding: 1.65em 0em 0em 1.1em;
+  font-family: Arial;
   font-size: 1.1em;
   height: auto;
   width: auto;
@@ -72,6 +73,7 @@ html{
   border-radius: 10px 10px 0px 0px;
   padding: 0.8em;
   text-align: center;
+  font-family: Arial;
   font-size: 1.5em;
   cursor: pointer;
   float: left;
@@ -87,6 +89,7 @@ html{
   border-radius: 10px 10px 0px 0px;
   padding: 0.8em;
   text-align: center;
+  font-family: Arial;
   font-size: 1.5em;
   cursor: pointer;
   float: left;

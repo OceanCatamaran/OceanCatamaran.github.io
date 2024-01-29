@@ -20,9 +20,77 @@
     </div>
 
     <div class="projectsBody">
-      <p>Welcome to Projects!</p>
-      <p>Here is a <a href="https://github.com/SojourningSloop">link</a> to my GitHub
-         which contains repos of my projects.
-      </p>
+      <p class="projectTitle" id="checklistTitle">Checklist - Task Logger Application</p>
+
+      <div class="projectContainer">
+        <img src="images/checklist_branding.png" id="banner" alt="Checklist Application Brand Logo">
+
+        <p class="projectHeader">Summary</p>
+        <p>- Part of a team that developed a windows-based desktop application for users to log and analyze tasks related data.</p>
+        
+        <p class="projectHeader">Team</p>
+        <p>- Due to the small team size, it was more efficient for all team members to partake in development and design of the app versus assigning rigid roles.</p>
+        <ul>
+          <p>Team Members:</p>
+          <li>Ethan Chen</li>
+          <li>Brendan Grant</li>
+          <li>Niko Kanoyan</li>
+          <li>Kalvin Kouch</li>
+          <li>Thomas Reynolds</li>
+          <li>Pablo Rodriguez</li>
+        </ul>  
+
+        <p class="projectHeader">My Role</p>
+        <p>- Designed and Coordinated the building of the task logging app in an Agile based development environment within 6-8 weeks.</p>
+          
+        <p class="projectHeader">Design <br> - </p>
+        <img src="images/checklist_wireframe_1.jpg" class="checklistDeliverables" alt="Checklist Application wireframe 1">
+        <img src="images/checklist_wireframe_2.png" class="checklistDeliverables" alt="Checklist Application wireframe 2">
+
+        <p class="projectHeader">Coordination</p>
+        <p>- Split work on app by the app's pages (homepage, file creation page, etc.) to each members of the team so we could work in parallel.
+        <br>Additionally, had weekly check-ins so team members could demonstrate progress, ask for advice, and evaluate progress towards completed app.</p>
+          
+        <p class="projectHeader">End Product</p>
+        <p>- Youtube video and <a href="https://github.com/OceanCatamaran/Checklist">GitHub repository link to Checklist</a></p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/S8Hurz9AHq0?si=BkysOGz44cYrUrlc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <p class="projectHeader">Reflection</p>
+        <p>- When team members are demonstrating progress on their assigned portion of the app, instead of just accepting answers like "oh, I am still in working on it..."
+            use the time to discuss what directions that individual is planning on taking or has undertook to make progress. Otherwise, progress on that section of the app
+            could get behidn and be rushed at the last minute.</p>
+          
+        <p>- When someone is sick, make sure a backup developer has already been designated to take that person's spot.</p>
+      </div>
+
+      <p class="projectTitle">Search Engine</p>
+
+      <div class="projectContainer">
+        <img src="images/searchEngine.png" id="searchEngineBanner" alt="Search Engine demonstration">
+
+        <p class="projectHeader">Summary</p>
+        <p>- Worked with a partner to develop backend of a search engine for our IN4 141 Search Engine project.</p>
+
+        <p class="projectHeader">Team Members:</p>
+        <ul>
+          <li>Brendan Grant</li>
+          <li>Noah Wang</li>
+        </ul>
+
+        <p class="projectHeader">Document Relevance Scoring <br> - </p>
+        <img src="images/tf-idf_weighting.jpg" class="searchEngineDeliverables" alt="Search Engine tf-idf weighting">
+        <img src="images/adjacency_weighting.jpg" class="searchEngineDeliverables" alt="Search Engine adjacency weighting">
+        <img src="images/formatting_weighting.jpg" class="searchEngineDeliverables" alt="Search Engine formatting weighting">
+
+        <p class="projectHeader">Index</p>
+        <p> - From a given document collection my partner and I designed our search engine to scrape tokens and stem them using Krovetz
+           stemmer (due to speed and decent accuracy compared to Porter stemmer). Tokens are then stored in broken indexes (multiple
+            text files) of generally 100-200MB each. Storing the tokens in one file would be too large. The data stored in each broken
+             inverted index is a token followed by a list of docIDs (pointing a corresponding url) with that token's frequency, positions,
+              and number of tokens that were titles, bolded, or headers in that given docID. After the broken indices are generated they
+               are merged into a single merged inverted index and a separate reference index is kept which lists all discovered tokens and
+                their memory locations in the merged index (to be used in hash table lookups when responding to queries).</p>
+
+      </div>
     </div>
 </html>
