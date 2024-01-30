@@ -9,20 +9,19 @@ li{
 }
 
 .projectTitle{
-    background-color: rgb(160, 227, 250);
+    background-color: #A0E1FF;
     font-family: Arial;
     font-size: 1.7em;
     padding: 2% 0% 2% 2%;
     height: 0.5%;
-}
-
-#checklistTitle{
-    background-color: rgb(160, 227, 250);
+    margin: 2% 0% 2% 0%;
+    box-shadow: 10px 10px rgb(175, 198, 206);
 }
 
 .projectHeader{
     font-size: 1.5em;    
-    margin: 0% 0% -1% 0%;
+    margin: 0% 0% 1% 0%;
+    font-weight: bold;
 }
 
 img{
@@ -98,6 +97,7 @@ embed{
     padding: 20px 25px 20px 25px;
     font-family: Arial;
     font-size: 2em;
+    box-shadow: 10px 10px rgb(175, 198, 206);
 }
 
 .resumeBody{
@@ -112,6 +112,7 @@ embed{
     padding: 20px 25px 20px 25px;
     margin: 0em 0em 20em 0em;
     font-size: 1em;
+    box-shadow: 10px 10px rgb(175, 198, 206);
 }
 
 .projectsBody{
@@ -126,6 +127,7 @@ embed{
     padding: 20px 25px 20px 25px;
     margin: 0em 0em 20em 0em;
     font-size: 1.5em;
+    box-shadow: 10px 10px rgb(175, 198, 206);
 }
 
 .projectContainer{
@@ -133,4 +135,5 @@ embed{
     grid-template-rows: auto 0%;
     background-color: rgb(211, 233, 240);
     padding: 1% 3% 1% 3%;
+    margin-bottom: 4%;
 }
