@@ -1,0 +1,176 @@
+html{
+  background-color: white;
+}
+
+#designedBy{
+  position: relative;
+  display: block;
+  top: 6.5em;
+}
+
+a:link { 
+  text-decoration: none; 
+} 
+a:visited { 
+  text-decoration: none; 
+} 
+a:hover { 
+  text-decoration: none; 
+} 
+a:active { 
+  text-decoration: none; 
+}
+
+.container {
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 0%;
+    top: 0%;
+    right: 0%;
+    float: none;
+    width: 100%;
+    height: 7em;
+    shape-outside: inset(20px 50px 10px 0 round 50px);
+    background-color: #A0E1FF;
+    /*border: 0.2em solid black;*/
+    border-radius: 0px;
+    margin: 0px 0px 0px 0px;
+    padding: 0px;
+    border-right: none;
+    border-left: none;
+    /*border-bottom: none;*/
+    z-index: 1;
+}
+
+.titlecontainer {
+  display: grid;
+  height: 1fr;
+  width: 80%;
+  position: relative;
+  top: -10%;
+  left: 0%;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  font-size: 2em;
+  border: 0.2em solid black;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+
+.titlecontainer > .boxes{
+  background-color: #A0E1FF;
+  text-align: left;
+  padding: 1.65em 0em 0em 1.1em;
+  font-family: Arial;
+  font-size: 1.1em;
+  height: auto;
+  width: auto;
+}
+
+#innerbuttoncontainer{
+  display: grid;
+  height: 58%;
+  width: 100%;
+  position: relative;
+  padding: 0%;
+  margin-bottom: 1%;
+  /*top: 2.5%;*/
+  bottom: 0%;
+  right: 0em;
+  align-content: flex-end;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 100%;
+  gap: 0%;
+  background-color: #7e7e7e;
+  border: solid;
+  border-color: white;
+  /*border-top: none;*/
+  border-left: none;
+  border-right: none;
+  z-index: 1;
+}
+
+#leftcap{
+  border: solid;
+  border-color: white;
+  border-radius: 15% 0% 0% 15%;
+  background-color: #7e7e7e;
+  height: 58%;
+  border-right: none;
+}
+
+#rightcap{
+  border: solid;
+  border-color: white;
+  border-radius: 0% 15% 15% 0%;
+  background-color: #7e7e7e;
+  height: 58%;
+  border-left: none;
+}
+
+#outerbuttoncontainer{
+  display: grid;
+  height: 100%;
+  width: 80%;
+  top: 20%;
+  position: relative;
+  /*top: 2.5%;*/
+  bottom: 0%;
+  right: 0em;
+  align-content: flex-end;
+  grid-template-columns: 3% 94% 3%;
+  grid-template-rows: 100%;
+  gap: 0px;
+  /*border: solid;
+  border-bottom-color: red;*/
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.button {
+  margin: 0% 0% 0% 0%;
+  background-color: #7e7e7e;
+  border: solid;
+  border-color: #7e7e7e;
+  border-radius: 30% 30% 30% 30%;
+  padding: 13% 0% 13% 0%;
+  text-align: center;
+  color: white;
+  font-family: Arial;
+  font-size: 1.5em;
+  cursor: pointer;
+  float: left;
+  height: 30%;
+  width: 98%;
+  /*border-bottom: none;*/
+}
+
+.selectedbutton {
+  margin: 0% 0% 0% 0%;
+  background-color: white;
+  border: solid;
+  border-color: white;
+  /*border-radius: 30% 30% 30% 30%;*/
+  padding: 13% 0% 13% 0%;
+  text-align: center;
+  color: black;
+  font-family: Arial;
+  font-size: 1.5em;
+  cursor: pointer;
+  float: left;
+  height: 40%;
+  width: 98%;
+  z-index: 2;
+}
+
+.selectedbutton:not(:last-child) {
+  margin-right: -3%;
+}
+
+.button:not(:last-child) {
+  margin-right: -3%;
+}
