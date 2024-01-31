@@ -34,24 +34,44 @@ img{
     display: block;
     float: left;
     width: 35%;
-    height: 20%;  
+    height: 80%;  
     margin: 2% 10% 5% 15%;
 }
 
 #searchEngineBanner{
     display: block;
     float: left;
-    width: 55%;
-    height: 40%;  
-    margin: 4% 5% 5% 2%;
+    width: 50%;
+    height: 52%;  
+    margin: 7% 5% 5% 2%;
 }
 
 #checklistSummary{
-    margin: 5% 0% 8% 0%;
+    display: block;
+    /*Border for debugging purposes to make sure next 
+    .projectHeader does not get indented
+    
+    border : solid;*/
+    height : 13em;
+    margin: 7% 0% 4% 0%;
+}
+
+#checklistSummary > #checklistP{
+    padding: 5% 0% 0% 0%;
 }
 
 #searchEngineSummary{
-    margin: 2% 0% 3% 0%;
+    display: block;
+    /*Border for debugging purposes to make sure next 
+    .projectHeader does not get indented
+    
+    border : solid;*/
+    height : 13em;
+    margin: 2% 0% 4% 0%;
+}
+
+#searchEngineSummary > #searchEngineP{
+    padding: 4% 0% 7% 0%;
 }
 
 .checklistDeliverables{
@@ -126,7 +146,7 @@ embed{
     float: left;
     border: solid black;
     border-width: 5px 5px 5px 5px;
-    height: 235em; /*orig - 145*/
+    height: 245em; /*orig - 145*/
     width: 80%;
     padding: 20px 25px 20px 25px;
     margin: 0em 0em 20em 0em;
