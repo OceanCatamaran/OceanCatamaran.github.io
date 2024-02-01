@@ -132,7 +132,7 @@ a:active {
   border-left: none;
   border-right: none;
   border-bottom: none;
-  box-shadow: 10px 10px rgb(175, 198, 206);
+  box-shadow: 10px 10px 0px rgb(160, 182, 189);
 }
 
 .button {
@@ -178,5 +178,5 @@ a:not(.selectedbutton):hover {
 }
 
 /*a:not(.selectedbutton):active {
-  font-size: 1em;
+  background: linear-gradient(rgb(148, 148, 148) 0%, rgb(226, 226, 226) 50%);
 }*/
