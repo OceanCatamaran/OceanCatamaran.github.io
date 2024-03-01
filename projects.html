@@ -27,6 +27,42 @@
     <div class="projectsBody">
       
       <div class="projectContainer">
+        <p class="projectTitle">Search Engine</p>
+
+        <div id="searchEngineSummary">
+          <img src="images/searchEngine.png" id="searchEngineBanner" alt="Search Engine demonstration">
+
+          <div id="searchEngineP">
+            <p class="projectHeader">Summary</p>
+            <p>Worked with a partner to develop backend of a search engine for our IN4 141 Search Engine project capable of handling 55,000+ documents or
+              webpages.</p>
+          </div>
+        </div>
+        
+        <p class="projectHeader">Team Members:</p>
+        <ul>
+          <li>Brendan Grant</li>
+          <li>Noah Wang</li>
+        </ul>
+
+
+        <p class="projectHeader">Document Relevance Scoring <br></p>
+        <img src="images/tf-idf_weighting.jpg" class="searchEngineDeliverables" alt="Search Engine tf-idf weighting">
+        <img src="images/adjacency_weighting.jpg" class="searchEngineDeliverables" alt="Search Engine adjacency weighting">
+        <img src="images/formatting_weighting.jpg" class="searchEngineDeliverables" alt="Search Engine formatting weighting">
+
+        <p class="projectHeader">Index</p>
+        <p>From a given document collection my partner and I designed our search engine to scrape tokens and stem them using Krovetz
+           stemmer (due to speed and decent accuracy compared to Porter stemmer). Tokens are then stored in broken indexes (multiple
+            text files) of generally 100-200MB each. Storing the tokens in one file would be too large. The data stored in each broken
+             inverted index is a token followed by a list of docIDs (pointing a corresponding url) with that token's frequency, positions,
+              and number of tokens that were titles, bolded, or headers in that given docID. After the broken indices are generated they
+               are merged into a single merged inverted index and a separate reference index is kept which lists all discovered tokens and
+                their memory locations in the merged index (to be used in hash table lookups when responding to queries).</p>
+
+      </div>
+
+      <div class="projectContainer">
         <p class="projectTitle">Checklist - Task Logger Application</p>
         <div id="checklistSummary">
           <img src="images/checklist_branding.png" id="banner" alt="Checklist Application Brand Logo">
@@ -72,41 +108,6 @@
         <p>When someone is sick, make sure a backup developer has already been designated to take that person's spot.</p>
       </div>
 
-      <div class="projectContainer">
-        <p class="projectTitle">Search Engine</p>
-
-        <div id="searchEngineSummary">
-          <img src="images/searchEngine.png" id="searchEngineBanner" alt="Search Engine demonstration">
-
-          <div id="searchEngineP">
-            <p class="projectHeader">Summary</p>
-            <p>Worked with a partner to develop backend of a search engine for our IN4 141 Search Engine project capable of handling 55,000+ documents or
-              webpages.</p>
-          </div>
-        </div>
-        
-        <p class="projectHeader">Team Members:</p>
-        <ul>
-          <li>Brendan Grant</li>
-          <li>Noah Wang</li>
-        </ul>
-
-
-        <p class="projectHeader">Document Relevance Scoring <br></p>
-        <img src="images/tf-idf_weighting.jpg" class="searchEngineDeliverables" alt="Search Engine tf-idf weighting">
-        <img src="images/adjacency_weighting.jpg" class="searchEngineDeliverables" alt="Search Engine adjacency weighting">
-        <img src="images/formatting_weighting.jpg" class="searchEngineDeliverables" alt="Search Engine formatting weighting">
-
-        <p class="projectHeader">Index</p>
-        <p>From a given document collection my partner and I designed our search engine to scrape tokens and stem them using Krovetz
-           stemmer (due to speed and decent accuracy compared to Porter stemmer). Tokens are then stored in broken indexes (multiple
-            text files) of generally 100-200MB each. Storing the tokens in one file would be too large. The data stored in each broken
-             inverted index is a token followed by a list of docIDs (pointing a corresponding url) with that token's frequency, positions,
-              and number of tokens that were titles, bolded, or headers in that given docID. After the broken indices are generated they
-               are merged into a single merged inverted index and a separate reference index is kept which lists all discovered tokens and
-                their memory locations in the merged index (to be used in hash table lookups when responding to queries).</p>
-
-      </div>
     </div>
 
     <p id="designedBy">Website Built and Designed in HTML and CSS by Brendan Grant.</p>
